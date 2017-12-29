@@ -1,0 +1,626 @@
+
+/*
+=========================================================================
+Main settings
+=========================================================================
+*/
+
+body {
+		font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+html, body, #wrapper, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+th, td {
+	font-size: 10px;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	text-decoration:none;
+}
+
+h1 {
+	font-size: 25px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-shadow:1px 1px 1px gray;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+h3 {
+	padding: 4px 0 0 0;
+}
+
+p{
+	font-size: 15px;
+	font-weight: normal;
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.clear {
+	clear: both;
+	height: 2px;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 3px;
+	font-size: 1px;
+}
+/*
+=========================================================================
+Wrapper
+=========================================================================
+*/
+
+#wrapper {
+	margin: auto;
+	text-align: left;
+	width: 1288px;
+}
+/*
+=========================================================================
+Header
+=========================================================================
+*/
+
+#header {
+	height: 13em;
+}
+
+#header img {
+	display: block;
+}
+
+#logo {
+	margin-top: 1em;
+	margin-left: 2em;
+	float: left;
+}
+
+#korpa {
+	float: right;
+	margin-top: 1em;
+	margin-right: 2em;
+}
+
+
+/*
+=========================================================================
+Navigation panel
+=========================================================================
+*/
+#nav {
+	margin-bottom: 3em;
+	box-shadow: 5px 5px 2px gray;
+	border: 1px solid silver;
+	background: #2980b9;
+	background: -webkit-linear-gradient(left top, #2980b9, #c0392b); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #2980b9, #c0392b); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #2980b9, #c0392b); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #2980b9, #c0392b); /* Standard syntax */
+}
+.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav li {
+	float: left;
+	position: relative;
+}
+
+.nav li a:link, .nav a:visited {
+	color: #ecf0f1;
+	text-decoration: none;
+	font-family: 'Fjalla One', sans-serif;
+}
+.nav li a:hover {
+	color: silver !important;
+}
+.nav li a:active {
+	color: #c0392b;
+}
+
+/*
+=========================================================================
+Products
+=========================================================================
+*/
+.leftbox {
+	border: 1px solid #bdc3c7;
+	border-radius: 0.3em;
+	padding: 0.5em;
+	box-shadow: 5px 5px 2px gray;
+	background-color: rgb(255,255,255);
+	float: left;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+.rightbox {
+	border: 1px solid #bdc3c7;
+	border-radius: 0.3em;
+	padding: 0.5em;
+	box-shadow: 5px 5px 2px gray;
+	background-color: rgb(255,255,255);
+	float: left;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+
+#products {
+	width: 1093px;
+	float: right;
+	margin-top:2em;
+}
+
+
+/*
+=========================================================================
+Forms
+=========================================================================
+*/
+.inputmail, .textmail, #subject {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.submitmail {
+	background-color: #2980b9;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.submitmail:hover {
+	opacity: 0.8;
+}
+
+/* Add a background color and some padding around the form */
+#mail {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.form {
+	float: right;
+	padding: 0.2em;
+	border: 1px solid silver;
+	border-radius: 0.3em;
+	box-shadow: 5px 5px 2px gray;
+}
+
+.search1 {
+	float: left;
+	max-width: 40%;
+	max-height: 80%;
+	margin-top: 0.2em;
+	border: 1px solid silver;
+	border-radius: 0.2em;
+}
+
+.sort1 {
+	margin-left:0.3em;
+	margin-top:0.2em;
+	max-width: 30%;
+	float: left;
+	border: 1px solid silver;
+	border-radius: 0.2em;
+}
+.submit1 {
+	max-width: 20%;
+	border: 1px solid silver;
+	border-radius: 0.3em;
+	float: right;
+}
+
+
+
+
+
+
+
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+.login input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.login button {
+	background-color: #2980b9;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: 1px solid transparent;
+	border-radius: 0.1em;
+	cursor: pointer;
+	width: 15%;
+}
+
+.login button:hover {
+	opacity: 0.8;
+}
+
+
+.login .cont {
+	padding: 16px;
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+.login span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+/*
+=========================================================================
+Footer
+=========================================================================
+*/
+
+#footer {
+	padding: 5em;
+	text-align: justify;
+	border: 1px solid #ecf0f1;
+	border-radius: 3px;
+	box-shadow: 5px 5px 2px gray;
+	width: 1288px;
+	position: relative;
+	margin-bottom: 0.2em;
+	background: #2980b9;
+	background: -webkit-linear-gradient(left top, #2980b9, #c0392b); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #2980b9, #c0392b); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #2980b9, #c0392b); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #2980b9, #c0392b); /* Standard syntax */
+}
+
+#footer-nav {
+	list-style-type: none;
+}
+#footer-nav li a {
+	color: white;
+	text-decoration: none;
+}
+
+/*
+=========================================================================
+Pages
+=========================================================================
+*/
+#newest_products {
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#aboutUs {
+	width: 643px;
+	padding: 30px 320px 30px 320px;
+}
+.readmore {
+	text-decoration:none;
+	text-align: right;
+	position: relative;
+	top: 3em;
+	right: 1em;
+
+}
+.readmore a:link, a:visited {
+	  color: #ecf0f1 !important;
+	  padding: 0.5em;
+	  background-color: #c0392b;
+	  border: 1px solid transparent;
+	  border-radius: 0.3em;
+  }
+.readmore a:hover {
+	color: #ecf0f1 !important;
+	background-color: #e74c3c;
+	text-decoration: none;
+}
+
+#discount {
+
+	width:500px;
+	height:500px;
+	margin-left:350px;
+	margin-top:100px;
+
+}
+#checkboxAll{
+	max-width:20em;
+	float:left;
+}
+
+#checkbox {
+	float: left;
+	max-height: 10em;
+	width: 10em;
+	padding: 1em;
+	border: 1px solid silver;
+	border-radius: 0.2em;
+	box-shadow: 5px 5px 2px gray;
+
+}
+#checkbox1 {
+	margin-top: 1em;
+	float:left;
+	max-height: 15em;
+	width: 10em;
+	padding: 1em;
+	border: 1px solid silver;
+	border-radius: 0.2em;
+	box-shadow: 5px 5px 2px gray;
+}
+
+#myCarousel {
+	margin-top: 7em;
+	margin-bottom: 7em;
+}
+
+#progress {
+	margin-top: 10em;
+	margin-bottom: 5em;
+}
+
+
+
+.map {
+	width: 45%;
+	float: left;
+	box-shadow: 5px 5px 2px gray;
+	border: 1px solid #42C0FB;
+	border-radius: 10px;
+	background-color: #f2f2f2;
+	padding: 25px;
+}
+
+.contact {
+	width:45%;
+	float: right;
+	padding: 25px;
+}
+
+#map {
+	height: 520px;
+	width: 100%;
+}
+
+.naslov_buy {
+	color: #42C0FB;
+	font-size: 18px;
+}
+
+.card {
+	height: 1500px;
+}
+
+#checkout {
+	float: right;
+	width: 5%;
+	border: 1px solid #42C0FB;
+	border-radius: 10px;
+}
+
+
+.block {
+	display: block;
+}
+
+
+.left {
+	text-decoration:none;
+	float: left;
+	margin: 1px 8px 0 0;
+}
+
+.softright {
+	text-decoration:none;
+	text-align: right;
+}
+
+#body .readmore {
+	text-decoration:none;
+	margin-top: -0.5em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#body .readmore a {
+	color: #42C0FB;
+}
+
+#body .readmore a:hover {
+	color: #E47300;
+}
+
+#body h3 {
+	text-align: center;
+	font-family: "Keble Condensed", "KebleCondensed", "arial narrow", helvetica, arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #5d5d5d;
+	padding: 0 0 0 18px;
+	margin: 1px 0 3px 0;
+}
+
+.empty_cart {
+	 display: block;
+	 color: #c0392b;
+	 font-size: 30px;
+	 padding: 1em;
+	 text-align: center;
+	 width: 15em;
+	 border-radius: 0.1em;
+	 position: relative;
+	 left: 33%;
+	 margin-top: 5%;
+	 margin-bottom: 10%;
+	 font-family: 'Fjalla One', sans-serif;
+ }
+
+.empty_cart a:link, .empty_cart a:visited {
+	color: #c0392b !important;
+	text-decoration: none;
+}
+.empty_cart a:hover {
+	 text-decoration: none;
+	 color: #e74c3c !important;
+ }
+.empty_cart a:active {
+	text-decoration: none;
+	color: #e74c3c;
+}
+/*
+=========================================================================
+Products
+=========================================================================
+*/
+
+.box {
+	height: 30em;
+	border-radius: 0.3em;
+	padding: 0.5em;
+	background-color: rgb(255,255,255);
+	margin-bottom: 1em;
+}
+
+.box:after {
+	clear: both;
+}
+.special {
+	margin-bottom: 2em;
+	border: 1px solid silver;
+	border-radius: 0.2em;
+}
+.product-header {
+	margin-top: 1em;
+	width: 100%;
+}
+.product-headline {
+	text-align: center !important;
+	font-family: 'Fjalla One', sans-serif !important;
+	font-size: 18px !important;
+}
+.product-image {
+	margin-top: 1em;
+	width: 100%;
+	float:left;
+	display: block;
+}
+.product-image img {
+    margin-left: 30%;
+	height: 17em;
+}
+.discount-image {
+	z-index: 999;
+	position: relative;
+	top:-6em;
+	left: -1em;
+	float: right;
+}
+.product-price {
+	margin-top: 1em;
+	width: 100%;
+	display: block;
+	float:left;
+}
+
+.product-readmore {
+	margin-top: 2em;
+	margin-left: 12em;
+	width: 40%;
+	display: block;
+	float:left;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.product-readmore a {
+	padding: 1em;
+	background-color: #c0392b;
+	color: white;
+	text-decoration: none;
+	border-radius: 0.2em;
+}
+.product-readmore a:hover {
+	background-color: #e74c3c;
+	text-decoration: none;
+	color: white;
+}
+
+.product-price1 {
+	margin-top: 1em;
+	width: 100%;
+	display: block;
+	float:left;
+	position: relative;
+	top:-8em;
+}
+
+.product-readmore1 {
+	margin-top: 3em;
+	margin-left: 12em;
+	 width: 40%;
+	 display: block;
+	 float:left;
+	 position: relative;
+	 top:-8em;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+ }
+
+.product-readmore1 a:link, a:visited {
+	padding: 1em;
+	background-color: #c0392b;
+	color: white;
+	text-decoration: none;
+	border-radius: 0.2em;
+}
+.product-readmore1 a:hover {
+	background-color: #e74c3c;
+	text-decoration: none;
+	color: white;
+}
